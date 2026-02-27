@@ -1,0 +1,95 @@
+name: localbeam
+description: Local file transfer app — fast, secure, no internet required.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+  get_it: ^7.7.0
+
+  # Networking
+  shelf: ^1.4.1
+  shelf_router: ^1.1.4
+  shelf_web_socket: ^1.0.4
+  web_socket_channel: ^2.4.0
+  multicast_dns: ^0.3.2+1
+  network_info_plus: ^5.0.3
+
+  # WebRTC
+  flutter_webrtc: ^0.10.7
+
+  # File handling
+  file_picker: ^8.0.7
+  share_plus: ^9.0.0
+  path_provider: ^2.1.3
+  path: ^1.9.0
+  mime: ^1.0.5
+
+  # QR
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^5.2.3
+
+  # Crypto / Security
+  crypto: ^3.0.3
+  cryptography: ^2.7.0
+  pointycastle: ^3.9.1
+
+  # Archive / Compression
+  archive: ^3.6.1
+
+  # Storage
+  hive_flutter: ^1.1.0
+  hive: ^2.2.3
+
+  # UI
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  lottie: ^3.1.2
+  percent_indicator: ^4.2.3
+  flutter_svg: ^2.0.10+1
+
+  # Utils
+  uuid: ^4.4.0
+  intl: ^0.19.0
+  logger: ^2.3.0
+  connectivity_plus: ^6.0.5
+  device_info_plus: ^10.1.2
+  permission_handler: ^11.3.1
+  open_filex: ^4.5.1
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  riverpod_generator: ^2.4.3
+  build_runner: ^2.4.11
+  hive_generator: ^2.0.1
+  mockito: ^5.4.4
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/animations/
+  fonts:
+    - family: Geist
+      fonts:
+        - asset: assets/fonts/Geist-Regular.ttf
+        - asset: assets/fonts/Geist-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Geist-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Geist-Bold.ttf
+          weight: 700
